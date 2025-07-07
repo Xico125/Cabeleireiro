@@ -1,0 +1,18 @@
+﻿{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<section class="contactos">
+    <h1>Contactos</h1>
+    <p><strong>Morada:</strong> Rua Eusébio da Silva Ferreira 33 loja 10, Marco de Canaveses 4630-463</p>
+    <p><strong>Telefone:</strong> 9******** / 9******** </p>
+
+    <div class="barbeiros-grid">
+        {% for barbeiro in barbeiros %}
+        <div class="barbeiro-card">
+            <p>{{ barbeiro.nome }}</p>
+            <img src="{{ barbeiro.imagem.url }}" alt="{{ barbeiro.nome }}">
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

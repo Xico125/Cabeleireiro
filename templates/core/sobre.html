@@ -1,0 +1,46 @@
+﻿{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+.sobre {
+    background-image: url("{% static 'img/local.png' %}");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-content {
+    background-color: rgba(0, 0, 0, 0.97); /* fundo preto semi-transparente */
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.88);
+}
+</style>
+
+<section class="sobre">
+  <div class="sobre-content">
+    <h1>Sobre Nós</h1>
+    <p>
+      Somos uma barbearia com vasta experiência no setor, composta por dois barbeiros apaixonados pela arte de cortar cabelo e cuidar da imagem dos nossos clientes. Acreditamos que cada corte é uma forma de expressão e, por isso, dedicamo-nos a oferecer um serviço personalizado, moderno e de qualidade.
+    </p>
+    <p>
+      O nosso compromisso vai além do simples corte: criamos uma experiência confortável, descontraída e focada no bem-estar de quem nos visita.
+    </p>
+    <p>
+      Além dos nossos serviços, representamos com orgulho a marca de produtos <strong>Preha</strong>, reconhecida pela sua qualidade e inovação no cuidado capilar. Os nossos clientes têm acesso aos melhores produtos profissionais, tanto no salão como para uso pessoal em casa.
+    </p>
+    <p>
+      Visita-nos e descobre um espaço onde tradição e modernidade se encontram, sempre com atenção ao detalhe e um toque único de estilo.
+    </p>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,14 @@
+﻿{% extends 'core/base.html' %}
+
+{% block content %}
+<section class="exemplos">
+    <h1>Exemplos de Cortes</h1>
+    <div class="cortes-grid">
+        {% for corte in cortes %}
+        <div class="corte-card">
+            <img src="{{ corte.imagem.url }}" alt="Corte">
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
